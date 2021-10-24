@@ -23,6 +23,7 @@ h2{
 h3{
     font-family: 'Quicksand', sans-serif;
     color: white;
+    line-height: 1.5;
 }
 
 h5{
@@ -32,57 +33,58 @@ h5{
     font-weight: normal;
 }
 
-hr{width: 5%; height: 0px;
+hr{
+    width: 5%; height: 0px;
     border-style: none;
     border-top-style: dotted;
     border-color: white;
     border-width: 5px;}
 
-a {
+a{
     color: white;
     margin: 10px 20px;
     text-decoration: none;
 }
 
-a:hover {
+a:hover{
     color: skyblue
 }
 
-#top-container {
+#top-container{
     margin-top: 0px;
     padding-top: 50px;
 }
     
-.middle-container {
+.middle-container{
     margin: auto;
 }
 
-.bottom-container {
+.bottom-container{
     background-color: #5090cc;
     color: white;
     padding: 50px 0 20px 0;
 }
 
 .top-cloud{
-    width: 7.5%;
+    max-width: 10%;
     position: absolute;
     top: 20px;
-    right: 27rem;
+    right: 20%;
 }
 
 .bottom-cloud{
-    width: 7.5%;
+    width: 10%;
     position: absolute;
-    left: 27rem;
+    left: 20%;
 }
 
 .mountain{
-    width: 25%;
+    max-width: 35%;
     margin-top: 20px;
 }
 
 .my-profile{
-    width: 35%;
+    max-width: 35%;
     margin-top: 30px;
 }
 
@@ -155,3 +157,8 @@ a:hover {
      font-size: x-small;
      color: skyblue;
  }
+
+ @media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
